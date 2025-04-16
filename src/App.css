@@ -1,0 +1,235 @@
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lilita-one-regular {
+  font-family: 'Lilita One', cursive;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  color: white; 
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+.login-section {
+  background-color: #282c34;
+  color: white;
+  padding: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login-section h2 {
+  margin-bottom: 10px;
+}
+
+.login-section p {
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+
+.login-section button {
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.signup-section {
+  padding: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-buttons button {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.social-buttons button:hover {
+  background-color: #eee;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3f51b5;
+}
+
+.signup-section button {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+}
+
+.signup-section button:hover {
+  background-color: #3f51b5;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+}
+
+body{
+  margin: 0;
+  padding:0;
+}
+.Sidebar {
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width: 100%x; 
+  height: 100%;    
+  background-color: #000721;  
+  padding-top: 0;   
+  display: flex;
+  flex-direction: column;  
+}
+
+.SidebarList {
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.SidebarList .row:hover {
+  cursor:pointer;
+  background-color: black;
+}
+
+.SidebarList .active {
+  background-color: #1D212A;
+}
+
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+
+.row #title {
+  flex: 70%;
+}
+
+
+
+/* .dashboard-container {
+  position: fixed; 
+  top: 100px;         
+  left: 400px;        
+  width: 60%;      
+  height: 60%;   
+ 
+} */
+
+.dashboard-container {
+  position: fixed; 
+  top: 0px;         
+  left: 290px;        
+  width: 60%;    
+  height: 60%;   
+ 
+}
+
+.Sidebar {
+  width: 250px;
+  background-color: #1f1f1f;
+  color: white;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+
