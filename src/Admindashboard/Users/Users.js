@@ -325,7 +325,7 @@ export default function Users() {
 
   return (
     <div className="dashboard-container">
-      <Sidebar />
+      
       <div style={{ width: '100%', maxWidth: '100%', margin: '0 auto', padding: '1rem' }}>
         <h2 style={{ marginBottom: '1rem' }}>Registered Users</h2>
         <MyTableContainer

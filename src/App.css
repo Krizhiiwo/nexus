@@ -5,7 +5,7 @@
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(145, 60, 60, 0.1);
 }
 
 .lilita-one-regular {
@@ -144,10 +144,10 @@ body {
   height: 100vh;
 }
 
-body{
+/* body{
   margin: 0;
   padding:0;
-}
+} */
 .Sidebar {
   position: fixed;
   top: 0;
@@ -207,7 +207,7 @@ body{
   width: 60%;      
   height: 60%;   
  
-} */
+} */  
 
 .dashboard-container {
   position: fixed; 
@@ -217,19 +217,19 @@ body{
   height: 60%;   
  
 }
-
+/* 
 .Sidebar {
   width: 250px;
   background-color: #1f1f1f;
   color: white;
   min-height: 100vh;
   padding: 1rem;
-}
+} */
 
 .content {
-  flex: 1;
-  padding: 2rem;
-  background-color: #f5f5f5;
+  flex-grow: 1;
+  padding: 10px; /* Try a smaller value */
+  color: white;
 }
 
 

@@ -37,6 +37,3 @@ Format your response as a JSON array of exactly 3 topic strings. Example: ["topi
 });
 
 export default router;
-
-
-

@@ -12,7 +12,7 @@ export default function Widget() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/users/user-stats');
+        const res = await axios.get('http://localhost:5000/api/users/user-total');
         setStats(res.data);
       } catch (error) {
         console.error('Failed to fetch stats:', error.message);
