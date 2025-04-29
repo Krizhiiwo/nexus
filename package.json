@@ -46,7 +46,7 @@
   },
 "scripts": {
   "start": "concurrently \"npm run server\" \"npm run client\"",
-  "server": "PORT=5000 node server.js",
+  "server": "cross-env PORT=5000 node server.js",
   "client": "cross-env HOST=0.0.0.0 PORT=3000 react-scripts start",
   "build": "react-scripts build --openssl-legacy-provider",
   "test": "react-scripts test",
