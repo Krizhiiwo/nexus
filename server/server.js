@@ -2,10 +2,13 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import AuthRoutes from './server/Routes/AuthRoutes.js';
-import QueryRoutes from './server/Routes/QueryRoutes.js';
+import path from 'path'; 
+import AuthRoutes from './Routes/AuthRoutes.js';
+import QueryRoutes from './Routes/QueryRoutes.js';
 
-dotenv.config();
+
+dotenv.config({ path: path.resolve(process.cwd(), '.env') });
+
 
 const app = express();
 app.use(express.json());
