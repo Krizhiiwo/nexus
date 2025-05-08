@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import './DashboardCalendar.css'; // Custom styling
+import './DashboardCalendar.css'; 
 
 const DashboardCalendarWithReminder = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -23,7 +23,7 @@ const DashboardCalendarWithReminder = () => {
       />
 
       <div className="reminder-section">
-        <h3>Set Reminder for {selectedDate.toDateString()}</h3>
+      <h3 style={{ color: 'black' }}>Set Reminder for {selectedDate.toDateString()}</h3>
         <input
           type="text"
           placeholder="Enter reminder"
@@ -33,12 +33,13 @@ const DashboardCalendarWithReminder = () => {
         <button onClick={handleAddReminder}>Add Reminder</button>
 
         <ul className="reminder-list">
-          {reminders
-            .filter(r => r.date === selectedDate.toDateString())
-            .map((reminder, index) => (
-              <li key={index}>{reminder.text}</li>
-            ))}
-        </ul>
+  {reminders
+    .filter(r => r.date === selectedDate.toDateString())
+    .map((reminder, index) => (
+      <li key={index} style={{ color: 'black' }}>{reminder.text}</li>
+    ))}
+</ul>
+
       </div>
     </div>
   );

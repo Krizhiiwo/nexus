@@ -7,6 +7,11 @@ import Notification from './Admindashboard/Notification.js';
 import Alerts from './Admindashboard/Alerts.js';
 import LoginSignup from './components/common/Login.js';
 import Register from './components/common/Register.js';
+import UserLayout from './UserDashboard/UserWrapper.js'; 
+import UserDashboard from './UserDashboard/UserDashboard.js';
+//import UserAlerts from './UserDashboard/UserAlerts.js';
+import UserMetrics from './UserDashboard/UserMetrics.js';
+
 
 function App() {
   return (
@@ -15,13 +20,16 @@ function App() {
         <Route path="/login" element={<LoginSignup />} />
         <Route path="/register" element={<Register />} />
 
-        {/* Dashboard pages use dark layout */}
+        {/* Admin Routes */}
+        <Route path="/admin-dashboard" element={<AdminLayout><Dashboard /></AdminLayout>} />
         <Route path="/dashboard" element={<AdminLayout><Dashboard /></AdminLayout>} />
         <Route path="/users" element={<AdminLayout><Users /></AdminLayout>} />
         <Route path="/notification" element={<AdminLayout><Notification /></AdminLayout>} />
         <Route path="/alerts" element={<AdminLayout><Alerts /></AdminLayout>} />
 
-        <Route path="/user-dashboard" element={<div>User Dashboard</div>} />
+        {/* User Routes */} 
+        <Route path="/user-dashboard" element={<UserLayout><UserDashboard /></UserLayout>} />
+        <Route path="/user-metric" element={<UserLayout><UserMetrics /></UserLayout>} />
 
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="*" element={<div>404 - Page Not Found</div>} />

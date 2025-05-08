@@ -270,23 +270,4 @@ router.get('/user-total', async (req, res) => {
   }
 });
 
-
-
-
-// router.get('/user-total', async (req, res) => {
-//   try {
-//     const totalUsers = await User.countDocuments(); 
-//     const deletedUsers = await User.countDocuments({ isDeleted: true }); 
-//     const adminUsers = await User.countDocuments({ role: 'admin' }); 
-
-//     res.json({
-//       totalUsers,
-//       deletedUsers,
-//       adminUsers,
-//     });
-//   } catch (err) {
-//     res.status(500).json({ error: 'Server error' });
-//   }
-// });
-
 export default router;

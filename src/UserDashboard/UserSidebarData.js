@@ -1,23 +1,23 @@
 import React from 'react';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
-import NotificationsNoneTwoToneIcon from '@mui/icons-material/NotificationsNoneTwoTone';
+import EqualizerIcon from '@mui/icons-material/Equalizer';
 import '../App.css';
-
-export const SidebarData = [ 
+import PriorityHighTwoToneIcon from '@mui/icons-material/PriorityHighTwoTone';
+export const SidebarData = [
   {
     title: "Dashboard",
     icon: <DashboardIcon />,
-    link: "/dashboard",
+    link: "/user-dashboard", 
   },
   {
-    title: "Users",
-    icon: <VerifiedUserIcon />,
-    link: "/users",
+    title: "Metrics",
+    icon: <EqualizerIcon />,
+    link: "/user-metric", 
   },
   {
-    title: "Notification",
-    icon: <NotificationsNoneTwoToneIcon />,
-    link: "/notification",
+    title: "Alerts",
+    icon: <PriorityHighTwoToneIcon />,
+    link: "/user-alerts", 
   }
 ];

@@ -15,7 +15,6 @@ const ChatWidget = () => {
 
     const newMessages = [...messages, { sender: 'user', text: input }];
     setMessages(newMessages);
-    setInput('');
 
     try {
       const response = await axios.post('http://localhost:5000/api/generate-topics', {
